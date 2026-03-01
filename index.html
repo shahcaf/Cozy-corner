@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner | A Chill Discord Community</title>
+    <meta name="description"
+        content="Cozy Corner is a relaxed and friendly Discord community where members chat, game, share interests, and have fun. Everyone's welcome.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="glow center-glow"></div>
+    <div class="glow right-glow"></div>
+
+    <header class="floating-header">
+        <div class="logo">☁️ Cozy Corner</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#join" class="nav-btn">Join Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section fade-in">
+            <div class="hero-content">
+                <div class="badge">✨ Your new favorite place</div>
+                <h1 class="headline">Welcome to <span class="text-glow">Cozy Corner</span> ☁️</h1>
+                <p class="subtext">A chill, friendly place to hang out, make friends, share, and relax. Leave the stress
+                    at the door.</p>
+                <div class="cta-container">
+                    <a href="https://discord.gg/3cRcHWjRSK" class="btn primary-btn giant-btn" target="_blank"
+                        rel="noopener noreferrer">
+                        Join the Discord
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="discord-icon">
+                            <path
+                                d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.33-.35-.76-.53-1.09a.09.09 0 0 0-.07-.03c-1.5.26-2.93.71-4.27 1.33-.01 0-.02.01-.03.02-2.72 4.07-3.47 8.03-3.08 11.95 0 .02.01.04.03.05 1.8 1.32 3.53 2.12 5.24 2.65.03.01.06 0 .07-.02.4-.55.76-1.13 1.07-1.74a.08.08 0 0 0-.04-.11c-.57-.22-1.11-.48-1.64-.78-.04-.02-.04-.08-.01-.11.12-.08.24-.17.36-.26a.08.08 0 0 1 .08-.01c3.48 1.59 7.24 1.59 10.7 0a.08.08 0 0 1 .08.02c.12.09.24.18.36.26.03.03.03.09-.01.11-.52.3-1.07.56-1.64.78a.08.08 0 0 0-.04.11c.32.61.68 1.19 1.07 1.74.02.02.04.03.07.02 1.71-.53 3.45-1.33 5.25-2.65.02-.01.03-.03.03-.05.44-4.53-.73-8.46-3.11-11.95-.01-.01-.02-.02-.03-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12 0 1.17-.83 2.12-1.89 2.12z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <div class="online-status">
+                        <span class="pulse"></span> 4,521 Members Online
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual parallax" data-speed="0.05">
+                <img src="hero.png" alt="Cozy Corner Illustration" class="hero-image floating-anim">
+            </div>
+            <div class="scroll-prompt">
+                <span>Scroll down</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="about-section fade-in">
+            <div class="about-content">
+                <h2 class="section-title">About Cozy Corner</h2>
+                <p class="section-text">
+                    Cozy Corner is a relaxed and friendly Discord community where members chat, game, share interests,
+                    and have fun. Everyone’s welcome — no stress, no pressure, just good vibes.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card tilt">
+                    <div class="feature-icon">💬</div>
+                    <h3>Chill Conversations</h3>
+                    <p>Hang out, share your day, and talk about anything and everything.</p>
+                </div>
+                <div class="feature-card tilt">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Casual Gaming</h3>
+                    <p>Join up for casual games, organized events, or just watch friends stream.</p>
+                </div>
+                <div class="feature-card tilt">
+                    <div class="feature-icon">🐾</div>
+                    <h3>Pets & Hobbies</h3>
+                    <p>Share cute pics of your pets or showcase your latest hobby projects.</p>
+                </div>
+                <div class="feature-card tilt">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Creativity & Sharing</h3>
+                    <p>Art, music, writing, and more. A safe space to show what you love.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="join-section fade-in">
+            <h2 class="section-title">Ready to Join?</h2>
+            <div class="join-box">
+                <p>Become part of the most relaxing corner on Discord.</p>
+                <a href="https://discord.gg/3cRcHWjRSK" class="btn primary-btn giant-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    Join Cozy Corner on Discord
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cozy Corner. All rights reserved. A chill place to be.</p>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
